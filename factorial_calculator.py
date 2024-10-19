@@ -12,7 +12,10 @@ def main():
         user_input = input("Введите положительное целое число от 1 до 1558: ")
         try:
             number = int(user_input)
-            if number < 1:
+            if number > 1558:
+                print("Ошибка: Введенное число больше, чем 1558.")
+                continue
+            elif number < 1:
                 print("Ошибка: Введите положительное число.")
                 continue
             result = compute_factorial(number)
@@ -24,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
