@@ -12,7 +12,7 @@ def main():
         user_input = input("Введите положительное целое число: ")
         try:
             number = int(user_input)
-            if number < 0:
+            if number < 1:
                 print("Ошибка: Введите положительное число.")
                 continue
             result = compute_factorial(number)
