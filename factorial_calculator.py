@@ -9,7 +9,7 @@ def compute_factorial(n):
 def main():
     """Основная функция программы."""
     while True:
-        user_input = input("Введите положительное целое число: ")
+        user_input = input("Введите положительное целое число от 1 до 1558: ")
         try:
             number = int(user_input)
             if number < 1:
